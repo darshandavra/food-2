@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 22px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background-color: rgb(63, 62, 62);
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+
+}
+
+ul li {
+    list-style: none;
+    margin-inline: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+ul li a:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.icon i {
+    margin-inline: 18px;
+    font-size: 20px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: white;
+}
+
+/* .....................................................................................nav end.................................... */
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    background: url(image8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 44px;
+    padding-top: 100px;
+    margin-top: 80px;
+}
+
+.maintext {
+    margin-top: 73px;
+
+}
+
+.maintext h1 {
+    font-size: 50px;
+
+}
+
+.maintext h3 {
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.maintext p {
+    margin-top: 22px;
+}
+
+.maintext button {
+    font-size: 20px;
+    width: 140px;
+    height: 36px;
+    border: 2px solid rgb(8, 212, 8);
+    color: white;
+    background-color: transparent;
+    margin-top: 22px;
+    transition: all ease 0.5s;
+}
+
+.maintext button:hover {
+    background-color: rgb(8, 212, 8);
+    cursor: pointer;
+}
+
+.main h1 span {
+    color: rgb(7, 231, 8);
+}
+
+/* ......................................................................................main end................................ */
+
+.logo span,
+.main span,
+.head span {
+    color: orangered;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.food-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.food-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #34495e;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.food-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.food-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.food-card .description {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.food-card .price {
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.food-card {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* .................................................................food end.............................................................. */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.customer-reviews {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #34495e;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.review-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.rating {
+    color: #ffcc00;
+    margin: 10px 0;
+}
+
+.review-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.review-card {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+
+/* ......................................................................review end............................... */
+
+#best-blog {
+    padding: 80px 0;
+    background: #f0f0f0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#best-blog .section-title {
+    margin-bottom: 50px;
+}
+
+#best-blog .section-title h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#best-blog .section-title p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+#best-blog .blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#best-blog .blog-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 320px;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+#best-blog .blog-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#best-blog .blog-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#best-blog .blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+#best-blog .blog-card:hover .blog-image img {
+    transform: scale(1.1);
+}
+
+#best-blog .blog-content {
+    padding: 25px;
+    text-align: left;
+}
+
+#best-blog .blog-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #34495e;
+    font-weight: bold;
+}
+
+#best-blog .blog-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+#best-blog .blog-content a {
+    font-size: 1.1rem;
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+#best-blog .blog-content a:hover {
+    color: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #best-blog .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#best-blog .blog-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#best-blog .blog-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+#best-blog .blog-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+/* .................................................................................blog end........................................................... */
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-logo,
+.footer-links,
+.footer-social {
+    margin: 10px;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color:orangered;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color:orangered;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    transform: scale(1.2);
+    color:orangered;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer-social .social-icons a {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer-links a {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.end {
+    background: #333;
+    text-align: center;
+}
+
+.end p {
+    color: rgb(159, 159, 159);
+    font-size: small;
+    margin-top: -25px;
+
+}
+.footer-container h3{
+    color: orangered;
+}
+
+
+/* ..................................................................................................footer end............................. */
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme-toggle i {
+    font-size: 20px;
+    margin-left: 10px;
+
+
+}
+
+.theme-toggle i.active {
+    color: orangered;
+}
+
+
+
+body.light {
+    background-color: #fff;
+    color: black;
+}
+
+body.dark {
+    background-color: #000000;
+    color: rgb(134, 134, 134);
+}
+
+/* ..........................................................................................dark light end ....................................... */
+
+@media only screen and (max-width:840px) {
+    nav ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    .showtime {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        background-color: rgb(153, 153, 153);
+        color: rgb(109, 106, 106);
+        width: 100%;
+        height: 200px;
+        margin-left: -8px;
+        gap: 22px;
+    }
+
+    .main {
+        display: block;
+        text-align: center;
+    }
+
+    .cards.crd {
+        width: 90%;
+        margin: auto;
+        margin-top: 22px;
+    }
+
+    .review {
+        width: 90px;
+    }
+
+    .slide img {
+        height: 100px;
+    }
+
+    .slide p {
+        margin-top: -21px;
+    }
+
+    .icon {
+        margin-right: 11px;
+    }
+}
+
+@media only screen and(max-width:760px) {
+    .cards.crd {
+        width: 80px;
+        margin: 80%;
+        margin-top: 25px;
+    }
+}
+
+
+@media only screen and(max-width:650px) {
+    .main img {
+        width: 90%;
+    }
+}
+
+@media only screen and(max-width:550px) {
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main h3 {
+        font-size: 32px;
+    }
+}
+
+/* .........................................................................................responsiv.end ............................... */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+nav {
+    animation: slideIn 1s ease-in-out;
+}
+
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.maintext button:hover {
+    animation: buttonHover 0.5s ease-in-out;
+}
+/* ................................................................................animation end................................................. */
